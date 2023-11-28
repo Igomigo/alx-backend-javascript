@@ -1,7 +1,3 @@
-/*
- * This module contains js code that prints a message to the CL
- */
-
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
