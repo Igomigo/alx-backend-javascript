@@ -1,12 +1,11 @@
 import { uploadPhoto, createUser } from './utils.js';
 
-
 export default async function asyncUploadUser() {
   try {
     const photoPromise = uploadPhoto();
     const userPromise = createUser();
 
-    // Use Promise.all to concurrently await both promises
+    /* Use Promise.all to concurrently await both promises */
     const [photoResponse, userResponse] = await Promise.all([photoPromise, userPromise]);
 
     return {
